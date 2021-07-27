@@ -1,0 +1,9 @@
+image:
+  repository: artifactory.build.ingka.ikea.com/opi-op-docker-release-local/otel-collector-test
+  pullPolicy: Always
+  tag: "latest"
+imagePullSecrets:
+  - name: 'artifactory'
+
+nodeSelector:
+  apps: run
